@@ -9,17 +9,21 @@ int main(void)
     {
         for (int j = 1; j <= pyramid_height - i; j++)
         {
-            printf(" ");            
+            printf("*");            
         }
         for (int z = 1; z <= i; z++)
         {
             printf("#", z);            
         }
         printf("  ");
+         for (int j = 1; j <= pyramid_height - i; j++)
+        {
+            printf("#");            
+        }
         for (int z = 1; z <= i; z++)
         {
-            printf("#", z);            
+            printf("*", z);            
         }
-        printf("\n");
+        printf("g\n");
     }
 }
